@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ProductsPage } from './pages/ProductsPage';
 // import { Header } from './Header';
 import { App } from './App';
+import { ProductPage } from './pages/ProductPage';
 
 const myRouterTree = createBrowserRouter([
   {
@@ -11,6 +12,10 @@ const myRouterTree = createBrowserRouter([
       {
         path: 'products', // tracks the BrowseURl state
         element: <ProductsPage />, // provides the relevant component
+      },
+      {
+        path: 'products/:id', // {id:1}
+        element: <ProductPage />,
       },
     ],
   },
