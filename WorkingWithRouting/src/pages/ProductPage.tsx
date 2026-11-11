@@ -10,7 +10,15 @@ export function ProductPage() {
 
   return (
     <div>
-      {requiredProduct === undefined ? <h1> unknown product</h1> : <h1>{requiredProduct.name}</h1>}
+      {requiredProduct === undefined ? (
+        <h1> unknown product</h1>
+      ) : (
+        <>
+          <h1>{requiredProduct.name}</h1>
+          <h1>{requiredProduct.description}</h1>
+          <h1>{requiredProduct.price}</h1>
+        </>
+      )}
     </div>
   );
 }

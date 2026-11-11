@@ -36,4 +36,10 @@ export const products: Product[] = [
     name: 'Tailwind CSS',
     price: 7,
   },
+  {
+    description: 'A library that does Form Validation',
+    id: 6,
+    name: 'RHF',
+    price: 10,
+  },
 ];
